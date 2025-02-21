@@ -9,7 +9,7 @@ class BlueICEServer():
         self.start_server()
         
 
-    def start_server(self, host="0.0.0.0", port=65432):
+    def start_server(self, host="127.0.0.1", port=65432):
         self.host = host
         """Starts a TCP server that listens for messages and responds."""
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as server_socket:
